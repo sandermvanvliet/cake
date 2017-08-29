@@ -55,7 +55,7 @@ namespace Cake.Common.Tools.DotNetCore.Publish
             builder.Append("publish");
 
             // Specific path?
-            if (path != null)
+            if (!string.IsNullOrWhiteSpace(path))
             {
                 builder.AppendQuoted(path);
             }
